@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Minha segunda atividade com jQuery</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <script>
+            /*
+            * A funcao $(function(){}) é executada assim que o documento é carregado por completo;
+            */
+            $(function(){                             
+                $('#mudared').on('click', function(){
+                    $('body').css('background-color', 'red');
+                })
+                
+                $('#mudalow').on('click', function(){
+                    $('body').css('background-color', 'yellow');
+                })
+
+                $('#mudagree').on('click', function(){
+                    $('body').css('background-color', 'green');
+                })
+
+                $('#mudablue').on ('click', function(){
+                    $('body').css('background-color', 'blue');
+                })
+            
+                $('#mudapurple').on ('click', function(){
+                    $('body').css('background-color', 'purple');
+                }) 
+            })        
+        </script> 
+
+    </head>
+    <body>
+        <button id="mudared">vermelho</button>
+        <button id="mudalow"> amarelo</button>
+        <button id="mudagree">verde</button>
+        <button id="mudablue">azul</button>
+        <button id="mudapurple">roxo</button>
+        
+    </body>
+</html>

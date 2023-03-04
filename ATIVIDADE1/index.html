@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Minha segunda atividade com jQuery</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <script>
+            /*
+            * A funcao $(function(){}) é executada assim que o documento é carregado por completo;
+            */
+            $(function(){
+                $('#button').on('click', function(){
+                    let valor = $('#campo').val();
+                    alert(valor);
+                });
+            })          
+        </script>            
+    </head>
+    <body>
+        <input type="text" id="campo">
+        <button id="button">Ok</button>
+    </body>
+</html>
